@@ -1,28 +1,28 @@
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Profile from "./pages/Profile";
+import Findbooks from "./pages/Findbooks";
 
-
-import './App.css'
-import Header from "./components/Header.jsx";
-import Footer from "./components/Footer.jsx";
-import Food from "./components/Food.jsx";
-import Card from "./components/Card.jsx";
 
 function App() {
-
   return (
+    <BrowserRouter>
+      <nav>
+        <Link to="/">Home</Link> |{" "}
+        <Link to="/about">About</Link> |{" "}
+        <Link to="/profile">Profile</Link> |{" "}
+        <Link to="/findbooks">Find Books</Link>
+      </nav>
 
-    <div>
-      <Header />
-      <main>
-        <Food/>
-        <Card/>
-      </main>
-      <Footer/>
-
-    </div>
-
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/findbooks" element={<Findbooks />} /> 
+      </Routes>
+    </BrowserRouter>
   );
-
 }
-
 
 export default App;
