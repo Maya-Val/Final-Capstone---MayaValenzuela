@@ -1,9 +1,9 @@
 import TextBlock from "../components/TextBlock"
-
+import Headline from "../components/Headline"
 function About(){
   return(
     <div>
-      <h1>About Page</h1>
+      <Headline words="About"/>
       <TextBlock/>
     </div>
 

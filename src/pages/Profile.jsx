@@ -1,5 +1,11 @@
+import Headline from "../components/Headline"
+
 function Profile() {
-  return <h1>Profile Page</h1>;
+  return(
+    <div>
+      <Headline words="Profile"/>
+    </div>
+  );
 }
 
 export default Profile;
