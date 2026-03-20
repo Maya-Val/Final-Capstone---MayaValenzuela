@@ -1,8 +1,7 @@
-import placeholdertitle from ""
 
 function Photo({picName, alternative}){
     return(
-        <div>
+        <div className="border-2 ">
             <img src={picName} alt={alternative}/>
         </div>
     );

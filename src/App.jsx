@@ -4,6 +4,7 @@ import About from "./pages/About";
 import Profile from "./pages/Profile";
 import Findbooks from "./pages/Findbooks";
 import Suggestions from "./pages/Suggestions";
+import Booklook from "./pages/Booklook";
 import "./index.css"
 
 
@@ -18,7 +19,8 @@ return (
         <Link to="/about">About</Link> |{" "}
         <Link to="/profile">Profile</Link> |{" "}
         <Link to="/findbooks">Find Books</Link> |{" "}
-        <Link to="/suggestions">Suggestions</Link>
+        <Link to="/suggestions">Suggestions</Link> |{""}
+        <Link to="/booklook">Book</Link>
       </nav>
 
       <Routes>
@@ -27,6 +29,7 @@ return (
         <Route path="/profile" element={<Profile />} />
         <Route path="/findbooks" element={<Findbooks />} /> 
         <Route path="/suggestions" element={<Suggestions />} />
+        <Route path="/booklook" element ={<Booklook />} />
       </Routes>
     </BrowserRouter>
   );

@@ -1,7 +1,7 @@
-function TextBlock(){
+function TextBlock({words}){
     return(
         <div class="text-center border-solid border-2 m-2">
-            <p>filler words here</p>
+            {words}
         </div>
     );
 }

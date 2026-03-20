@@ -1,13 +1,14 @@
 import Findbooks from "./Findbooks.jsx";
 import ButtonLink from "../components/ButtonLink";
-import Headline from "../components/Headline"
-import StyleSelect from "../components/StyleSelect.jsx";
+import Headline from "../components/Headline";
 
 function Home() {
+  
   return (
     <div>
+      
       <Headline words="Home Page"/>
-      <ButtonLink name="Find books" option={blue} />
+      <ButtonLink option="blue" name="Find books"/>
       <br></br>
       <ButtonLink name="Profile"/>
       <br></br>
