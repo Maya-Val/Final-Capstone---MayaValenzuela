@@ -10,9 +10,9 @@ function Home() {
       <Headline words="Home Page"/>
       <ButtonLink option="blue" name="Find books"/>
       <br></br>
-      <ButtonLink name="Profile"/>
+      <ButtonLink option="green"name="Profile"/>
       <br></br>
-      <ButtonLink name="Suggestions"/>
+      <ButtonLink option="bob" name="Suggestions"/>
     </div>
 
   );

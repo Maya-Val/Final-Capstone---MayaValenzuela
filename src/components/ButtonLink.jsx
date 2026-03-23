@@ -1,20 +1,24 @@
-
-function selector ({option}){
-    if ({option}=="blue"){
+// set up functions
+function selector(option){
+    if (option =="blue"){
         return ("text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-base text-sm px-4 py-2.5 text-center leading-5");
     }
-    else if ({option}=="green"){
+    else if (option =="green"){
         return ("text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-base text-sm px-4 py-2.5 text-center leading-5");
     }
     else {
-        return ("border-dashed");
+        return ("border-dashed border-2");
     }
 }
 
+// actual function
 function ButtonLink({option,name}){
-    const type = selector ({option})
+
+    // assume option = "blue" name = "find books"
+    const type = selector(option)
     return(
         <div>
+       
             <button type="button" className={type}>{name}</button>
         
         </div>

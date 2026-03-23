@@ -4,7 +4,7 @@ function About(){
   return(
     <div>
       <Headline words="About"/>
-      <TextBlock/>
+      <TextBlock words="blurb insert here"/>
     </div>
 
   );
