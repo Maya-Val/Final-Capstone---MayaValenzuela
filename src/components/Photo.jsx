@@ -1,8 +1,22 @@
 
-function Photo({picName, alternative}){
+function purpose (goal){
+    if (goal=="book"){
+        return("size-1/4 h-1/2 border-2");
+    }
+    else if(goal=="profile"){
+        return("rounded-full border-2 size-20 m-2");
+    }
+    else{
+        return ("w-full border-2");
+    }
+
+}
+
+function Photo({picName, alternative, goal}){
+    const happen = purpose(goal)
     return(
-        <div className="border-2 ">
-            <img src={picName} alt={alternative}/>
+        <div>
+            <img className={happen} src={picName} alt={alternative}/>
         </div>
     );
 }

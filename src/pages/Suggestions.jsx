@@ -5,9 +5,9 @@ function Suggestions(){
     return(
         <div>
             <Headline words="Make a Suggestion"/>
-            <ButtonLink name="add book to collection"/>
+            <ButtonLink option="blue" name="add book to collection"/>
             <br></br>
-            <ButtonLink name="other request"/>
+            <ButtonLink option="blue" name="other request"/>
         </div>
     );
 
