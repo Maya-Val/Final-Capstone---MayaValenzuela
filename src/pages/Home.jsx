@@ -1,6 +1,7 @@
 import Findbooks from "./Findbooks.jsx";
 import ButtonLink from "../components/ButtonLink";
 import Headline from "../components/Headline";
+import {Link} from "react-router-dom";
 
 function Home() {
   
@@ -8,11 +9,11 @@ function Home() {
     <div>
       
       <Headline words="Home Page"/>
-      <ButtonLink option="blue" name="Find books"/>
+      <Link to="/findbooks"><ButtonLink option="blue" name="Find books"/></Link>
       <br></br>
-      <ButtonLink option="green"name="Profile"/>
+      <Link to="/profile"><ButtonLink option="green"name="Profile"/></Link>
       <br></br>
-      <ButtonLink option="bob" name="Suggestions"/>
+      <Link to="/suggestions"><ButtonLink option="bob" name="Suggestions"/></Link>
     </div>
 
   );

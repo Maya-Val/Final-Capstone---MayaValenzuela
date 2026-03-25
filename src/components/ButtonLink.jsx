@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom";
+
 // set up functions
 function selector(option){
     if (option =="blue"){
