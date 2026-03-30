@@ -3,7 +3,8 @@ function Table(){
     const books = [
         {id:0, 
         title:"Cat in the hat",
-        author:"Dr Suess"},
+        author:"Dr Suess",
+        genre:"kids"},
         {id:1, 
         title:"I Want My Hat Back",
         author:"Jon Klassen"},
@@ -12,15 +13,14 @@ function Table(){
         author:"Eric Carle"},
     ];
 
-    const listBooks = books.map (book => <li>{book}</li> );
-    // const titles = books.filter(book=> book.title ==="title");
-    // const authors = books.filter(book=> book.author ==="author");
-
+    const listTitle = books.map (book => <li> {book.title} </li> );
+    const listAuthor = books.map (book => <li> {book.author} </li> );
+   
     return(
         <section className="items-center">
 
 
-            {/* <ul>{listBooks}</ul> */}
+            
             <div class="relative overflow-x-auto bg-neutral-primary-soft shadow-xs rounded-base border border-default">
                 <table class="w-full text-sm text-left rtl:text-right text-body">
                     <thead class="text-sm text-body bg-neutral-secondary-medium border-b border-default-medium">
@@ -36,11 +36,12 @@ function Table(){
                     <tbody>
                         <tr class="bg-neutral-primary-soft border-b border-default hover:bg-neutral-secondary-medium">
                             <th scope="row" class="px-6 py-4 font-medium text-heading whitespace-nowrap">
-                               {/* <ul>{titles}</ul> */}
-                               {/* {book.title} */}
+                            
+                               {listTitle}
                             </th>
                             <td class="px-6 py-4">
-                                {/* <ul>{authors}</ul> */}
+                               
+                                {listAuthor}
                             </td>
                         </tr>
                         

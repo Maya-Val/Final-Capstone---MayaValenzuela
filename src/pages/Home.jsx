@@ -13,7 +13,7 @@ function Home() {
       <br></br>
       <Link to="/profile"><ButtonLink option="green"name="Profile"/></Link>
       <br></br>
-      <Link to="/suggestions"><ButtonLink option="bob" name="Suggestions"/></Link>
+      <Link to="/suggestions"><ButtonLink option="blue" name="Suggestions"/></Link>
     </div>
 
   );
