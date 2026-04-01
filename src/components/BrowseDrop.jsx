@@ -1,4 +1,5 @@
 import ButtonLink from "./ButtonLink";
+import {Link} from "react-router-dom";
 
 function BrowseDrop({title}){
     return(
@@ -25,7 +26,7 @@ function BrowseDrop({title}){
                     <option value="manga">Manga</option>
                     <option value="alphabetical">All books (Alphabetical)</option>
                 </select>
-                <ButtonLink option="blue" name="Submit"/>
+                <Link to= "/booklook"> <ButtonLink option="blue" name="Submit"/> </Link>
             </div>
         </section>
     );

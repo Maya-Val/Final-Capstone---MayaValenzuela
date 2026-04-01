@@ -1,5 +1,6 @@
 import ButtonLink from "./ButtonLink";
 import UserWrite from "./UserWrite";
+import {Link} from "react-router-dom";
 
 function BrowseInput({title}){
     return(
@@ -7,7 +8,7 @@ function BrowseInput({title}){
             <div className="text-center border-2 m-2">
                 <p>{title}</p>
                 <UserWrite/>
-                <ButtonLink option="blue" name="Submit"/>
+                <Link to= "/booklook"> <ButtonLink option="blue" name="Submit"/> </Link>
             </div>
         </section>
     );
