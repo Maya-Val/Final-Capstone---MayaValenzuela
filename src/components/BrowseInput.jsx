@@ -5,10 +5,10 @@ import {Link} from "react-router-dom";
 function BrowseInput({title}){
     return(
         <section>
-            <div className="text-center border-2 m-2">
+            <div className="text-center border-2 m-2 bg-violet-200">
                 <p>{title}</p>
                 <UserWrite/>
-                <Link to= "/booklook"> <ButtonLink option="blue" name="Submit"/> </Link>
+                <Link to= "/booklook"> <ButtonLink option="purple" name="Submit"/> </Link>
             </div>
         </section>
     );

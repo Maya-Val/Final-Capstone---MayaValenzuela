@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 function BrowseDrop({title}){
     return(
         <section>
-            <div className="text-center border-2 m-2">
+            <div className="text-center border-2 m-2 bg-violet-200">
                 <p>{title}</p>
                 <select className="static">
                     <option value="nonFiction">Non-Fiction</option>
@@ -26,7 +26,7 @@ function BrowseDrop({title}){
                     <option value="manga">Manga</option>
                     <option value="alphabetical">All books (Alphabetical)</option>
                 </select>
-                <Link to= "/booklook"> <ButtonLink option="blue" name="Submit"/> </Link>
+                <Link to= "/booklook"> <ButtonLink option="purple" name="Submit"/> </Link>
             </div>
         </section>
     );

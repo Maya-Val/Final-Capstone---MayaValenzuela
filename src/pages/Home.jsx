@@ -6,15 +6,17 @@ import {Link} from "react-router-dom";
 function Home() {
   
   return (
-    <div>
+    <section>
       
       <Headline words="Home Page"/>
-      <Link to="/findbooks"><ButtonLink option="blue" name="Find books"/></Link>
-      <br></br>
-      <Link to="/profile"><ButtonLink option="green"name="Profile"/></Link>
-      <br></br>
-      <Link to="/suggestions"><ButtonLink option="blue" name="Suggestions"/></Link>
-    </div>
+      <div className="columns-3 gap-1 text-center m-5">
+        <Link to="/findbooks"><ButtonLink option="purple" name="Find books"/></Link>
+        <br></br>
+        <Link to="/profile"><ButtonLink option="pink"name="Profile"/></Link>
+        <br></br>
+        <Link to="/suggestions"><ButtonLink option="pink" name="Suggestions"/></Link>
+      </div>
+    </section>
 
   );
 }

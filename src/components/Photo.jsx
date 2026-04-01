@@ -1,7 +1,7 @@
 
 function purpose (goal){
     if (goal=="book"){
-        return("size-1/4 h-1/2 border-2");
+        return(" border-2");
     }
     else if(goal=="profile"){
         return("rounded-full border-2 size-20 m-2");

@@ -13,7 +13,7 @@ function Profile() {
       <Headline words="Profile"/>
       <Photo picName={placeholdertitle} alternative="flower" goal="profile"/>
       <TextBlock words="Bob"/>
-      <ButtonLink option="green" name="change profile picture"/>
+      <ButtonLink option="pink" name="change profile picture"/>
       <Headline words="Past Reviews"/>
       <TextBlock words ="insert past reviews here"/>
     </div>
