@@ -1,10 +1,13 @@
 
 function purpose (goal){
     if (goal=="book"){
-        return(" border-2");
+        return(" border-2 ");
     }
     else if(goal=="profile"){
         return("rounded-full border-2 size-20 m-2");
+    }
+    else if (goal=="general"){
+        return("border-2 w-1/3 object-center");
     }
     else{
         return ("w-full border-2");

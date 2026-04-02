@@ -1,9 +1,9 @@
 function purpose (goal){
     if (goal=="center"){
-        return("text-center border-solid border-2 m-2");
+        return("text-center border-solid border-2 m-2 bg-violet-200");
     }
     else if(goal=="description"){
-        return("");
+        return("bg-violet-200 h-1/4");
     }
     else{
         return ("w-full border-2");

@@ -1,6 +1,8 @@
 import Findbooks from "./Findbooks.jsx";
 import ButtonLink from "../components/ButtonLink";
 import Headline from "../components/Headline";
+import Photo from "../components/Photo.jsx";
+import librarypic1 from "../assets/libraryphoto1.JPG";
 import {Link} from "react-router-dom";
 
 function Home() {
@@ -9,6 +11,7 @@ function Home() {
     <section>
       
       <Headline words="Home Page"/>
+      <Photo picName={librarypic1} alternative="library" goal="general"/>
       <div className="columns-3 gap-1 text-center m-5">
         <Link to="/findbooks"><ButtonLink option="purple" name="Find books"/></Link>
         <br></br>
