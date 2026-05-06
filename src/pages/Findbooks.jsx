@@ -12,7 +12,11 @@ function Findbooks() {
   const allBooks = [
           {"id":0, "author": "Han Kang", "title":"The Vegetarian", "genera":"horror" },
           {"id":1, "author": "Mark Dunn", "title":"Ella Minnow Pea", "genera":"humour"},
-          {"id":2, "author": "Erin Morgenstern", "title":"The Night Circus", "genera":"fantasy"}
+          {"id":2, "author": "Erin Morgenstern", "title":"The Night Circus", "genera":"fantasy"},
+          {"id":3, "author": "Trevor Noah", "title":"Born a Crime", "genera":"biography" },
+          {"id":4, "author": "Liu Cixin", "title":"The Three-Body Problem", "genera":"scifi" },
+          {"id":5, "author": "F. Scott Fitzgerald", "title":"The Great Gatsby", "genera":"classics" },
+          {"id":6, "author": "George Orwell", "title":"1984", "genera":"dystopian" },
       ]
 
   const filteredBooks= allBooks.filter((book)=> {
